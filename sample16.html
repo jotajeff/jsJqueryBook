@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang=”pt-br”>
+<head>
+<title>Basic Function</title>
+
+<meta charset="utf-8">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+<style>
+    .myBackground {
+        background-color: rgb(68, 44, 11);
+        letter-spacing:.2rem;
+        padding: .2em;
+        text-align: center;
+        line-height: 0.85em;
+        border-radius: 2px;
+    }
+</style>
+
+    <script>
+        function getArea(width, height){
+        var area = width * height;
+        return area ;
+            }
+
+        var wallSize = getArea(3, 2);
+        var totalArea = wallSize;
+        console.log(wallSize);
+        console.log(totalArea);
+        //elMsg = document.getElementById('message');
+        //document.write(wallSize);
+        //document.getElementById("paragraph").textContent = "Hello, World";
+        elMsg = document.getElementById('message');
+        elMsg.textContent = totalArea;
+
+        
+         
+    </script>
+
+
+</head>
+<body>
+
+<div class="container">
+    
+<h1>TravelWorthy</h1>
+<div id="message" class="display-4 text-warning"> </div>
+
+
+</div>
+</body>
+</html>
